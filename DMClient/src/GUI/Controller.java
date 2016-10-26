@@ -23,14 +23,15 @@ public class Controller {
 
     @FXML
     private ChoiceBox referee;
-    public Button beginButton;
-    public Button loginButton;
-    public Button scheduleButton;
-    public Button backButton;
-    public Button showButton;
+    @FXML
+    public Button beginButton, loginButton, scheduleButton, backButton, showButton;
+    @FXML
     public Hyperlink sLogoutButton;
+    @FXML
     public TextField loginText;
+    @FXML
     public PasswordField loginPassword;
+    @FXML
     public TextArea sTextArea;
 
     private Socket s;
@@ -118,6 +119,19 @@ public class Controller {
             e.printStackTrace();
         }
     }
+    
+    //@FXML
+    //public void standingsBttn() throws IOException{
+    //    Stage stage;
+    //    Parent root;
+    //    FXMLLoader standingsloader = new FXMLLoader();
+    //    stage = (Stage) viewStandings.getScene().getWindow();
+    //    root = standingsloader.load(getClass().getResource("Standings.fxml"));
+    //
+    //    Scene scene = new Scene(root);
+    //    stage.setScene(scene);
+    //    stage.show();
+    //}
 
     public void goBack(ActionEvent event)
     {
